@@ -33,3 +33,11 @@ func UpdateInvoice() gin.HandlerFunc {
 		})
 	}
 }
+
+func DeleteInvoice() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Delete Invoice",
+		})
+	}
+}
